@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--  바구니 100% 100%로 설정 후 내용물을 %로 위치 조정.--> 
+
+<!--- header와 content라는  두 컨테이너로 크게  나누면서
+    display: flex;, 리고 width와 height: 100%로 설정. 
+    header 부분에는  배너와 아이콘을 넣었고
+     content 부분에는 contents와 일정을 볼 수 있는 rightbar로 id를 지정후 
+         %값을 사용하여 위치를 조정.  -->
+
+         
+  <style> 
+   div {
+        border: 1px solid; 
+        display: flex; 
+
+   }
+   #picture {
+         position: fixed; 
+         
+         width: 15%; 
+         height: 15%; 
+         left: 26%; 
+         top: 18%; 
+         background: rgba(155,155,155,1); 
+         opacity: 1; 
+         border-radius: 50%;  
+   }
+    #nickname { 
+        position: absolute;
+         border: 0px; 
+         position: fixed; 
+         left: 41%; 
+         top: 27%;  
+         background-color: aqua;
+    } 
+    #content {
+              position: absolute; 
+              width: 51%;  
+              height: 80%;  
+              left: 11%; 
+              top: 45%;  
+              z-index: 1; 
+    }
+    #rightbar {
+             position: absolute; 
+             width: 28%; 
+             height: 28%; 
+             left: 70%; 
+             top: 45%; 
+    }
+    #icon {
+            position: absolute; 
+            left: 47%; 
+            top: 67%;   
+            background-color: black; 
+            width: 10%; 
+            height: 20%; 
+    }
+     #header {
+            position: fixed; 
+            display: flex; 
+            background-color: grey;  
+            width: 100%; 
+            height: 30%;  
+            z-index: 2;
+
+    } 
+
+</style>
+
+</head>
+<body style=" margin: 0; ">  
+    <div id="container" style="display: flex; flex-direction: column; width:100%; height: 100%; "> 
+        <div id="header">
+       <div id="picture">
+    </div>     
+       <div id="nickname"> 
+    </div> 
+       <div id="icon"> 
+           <!-- <input type="button" value="test">  -->
+     </div>  
+    </div>   <!--header-->
+
+
+    <div id="contents" style="display: flex; width: 100%;  height: 100%; "> 
+          <div id="content" >
+
+
+          </div>  
+    <div id="rightbar">
+
+
+
+   </div> 
+    </div>   <!--contents-->   
+    
+    </div>
+
+   
+
+
+
+    
+</body>
+</html>

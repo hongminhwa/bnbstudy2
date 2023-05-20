@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> 
+   div  { 
+       border: 1px solid; 
+       display: flex;
+         
+  }  
+
+  header {  
+       
+       display: flex; 
+        position: fixed; 
+        text-align: center;
+        font-size: 36px;  
+        font-weight: bold;  
+        left: 20%;
+
+  }
+  #test  {
+        display: flex;
+        position: fixed; 
+        width: 220px; 
+        height: 220px;
+        left: 28%; 
+        top: 14%; 
+        background: rgba(155,155,155,1); 
+        opacity: 1;
+        border-radius: 50%; 
+  }
+
+   #content  { 
+    display: flex;
+    position: absolute;
+    width: 1300px;
+    height:  700px;
+    left: 20%; 
+    top: 40%; 
+   }  
+
+
+   #rightbar {
+         position: absolute; 
+         width: 500px; 
+         height: 500px; 
+         left: 75%; 
+         top: 40%;           
+         display: flex;
+         
+   }
+
+   #nickname { 
+
+        border: 0px;
+        position: absolute; 
+        left: 39%; 
+        top: 20%;
+
+    } 
+    #header {
+        background-color:darkgrey;
+       
+         
+    }
+
+   
+
+  /* <input  type="text" size="20"><input type="button" vlaue="검색"> */
+</style>   
+</head>
+<body margin: 0;> 
+    <div id="container" style="display: flex; flex-direction: column;"> 
+        <div id="header" style="width: 100%; height: 5%;  position: fixed;  display: flex; " >  
+            <div>
+                <header> <input type="text" size="45"  > <input type="button" value="검색">  friends | online | All |  Pending | suggestion | blocked |Add friend  </header>
+            </div> 
+            <div> 
+
+            </div> 
+        </div> 
+        <div id="test" style=" display: flex;"> </div>
+        <div id="header2" style="width: 100%; height: 26%; position: fixed; ">  <!--<div id="nickname" > <h1>닉네임  </h1> </div>--> </div>    
+        <div id="sidebar" style="width: 15%; height: 100%; position: fixed;  display: flex; "> 
+            <div id="iconbar" style="width: 5%; height:100%; position: fixed;"> </div>     
+        </div>  
+        <div id="nickname" >
+             <h1>닉네임 </h1> 
+        </div>
+        <div  id="content" style="display: flex; " >  </div>
+        <div id="rightbar"> </div>     
+        <div id="menubar">  </div>
+
+    </div>
+
+   
+</body>
+</html> 
